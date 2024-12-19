@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Title\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.12.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\Title\.nuget\packages\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\Title\.nuget\packages\fsharp.core\9.0.100</PkgFSharp_Core>
+    <PkgOxpecker Condition=" '$(PkgOxpecker)' == '' ">C:\Users\Title\.nuget\packages\oxpecker\1.1.1</PkgOxpecker>
+    <PkgMicrosoft_AspNetCore_OpenApi Condition=" '$(PkgMicrosoft_AspNetCore_OpenApi)' == '' ">C:\Users\Title\.nuget\packages\microsoft.aspnetcore.openapi\9.0.0</PkgMicrosoft_AspNetCore_OpenApi>
+    <PkgOxpecker_OpenApi Condition=" '$(PkgOxpecker_OpenApi)' == '' ">C:\Users\Title\.nuget\packages\oxpecker.openapi\1.0.0</PkgOxpecker_OpenApi>
+    <PkgOxpecker_Htmx Condition=" '$(PkgOxpecker_Htmx)' == '' ">C:\Users\Title\.nuget\packages\oxpecker.htmx\1.0.0</PkgOxpecker_Htmx>
+    <PkgFSharp_Control_TaskSeq Condition=" '$(PkgFSharp_Control_TaskSeq)' == '' ">C:\Users\Title\.nuget\packages\fsharp.control.taskseq\0.4.0</PkgFSharp_Control_TaskSeq>
+  </PropertyGroup>
+</Project>

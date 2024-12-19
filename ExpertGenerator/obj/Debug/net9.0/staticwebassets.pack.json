@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Title\\RiderProjects\\ExpertGenerator\\ExpertGenerator\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Title\\RiderProjects\\ExpertGenerator\\ExpertGenerator\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.ExpertGenerator.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.ExpertGenerator.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.ExpertGenerator.props",
+      "PackagePath": "build\\ExpertGenerator.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.ExpertGenerator.props",
+      "PackagePath": "buildMultiTargeting\\ExpertGenerator.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.ExpertGenerator.props",
+      "PackagePath": "buildTransitive\\ExpertGenerator.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

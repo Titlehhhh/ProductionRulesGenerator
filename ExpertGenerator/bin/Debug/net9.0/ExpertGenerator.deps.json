@@ -1,0 +1,239 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "ExpertGenerator/1.0.0": {
+        "dependencies": {
+          "FSharp.Control.TaskSeq": "0.4.0",
+          "FSharp.Core": "9.0.100",
+          "Microsoft.AspNetCore.OpenApi": "9.0.0",
+          "Oxpecker": "1.1.1",
+          "Oxpecker.Htmx": "1.0.0",
+          "Oxpecker.OpenApi": "1.0.0"
+        },
+        "runtime": {
+          "ExpertGenerator.dll": {}
+        }
+      },
+      "FSharp.Control.TaskSeq/0.4.0": {
+        "dependencies": {
+          "FSharp.Core": "9.0.100"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FSharp.Control.TaskSeq.dll": {
+            "assemblyVersion": "0.4.0.0",
+            "fileVersion": "0.4.0.0"
+          }
+        }
+      },
+      "FSharp.Core/9.0.100": {
+        "runtime": {
+          "lib/netstandard2.1/FSharp.Core.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.1.24.52202"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.1/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.1/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.1/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.1/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.1/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.1/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.1/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.1/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.1/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.1/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.1/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.OpenApi/9.0.0": {
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.17"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52903"
+          }
+        }
+      },
+      "Microsoft.Extensions.ObjectPool/9.0.0": {},
+      "Microsoft.IO.RecyclableMemoryStream/3.0.1": {
+        "runtime": {
+          "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
+          }
+        }
+      },
+      "Microsoft.OpenApi/1.6.17": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "assemblyVersion": "1.6.17.0",
+            "fileVersion": "1.6.17.0"
+          }
+        }
+      },
+      "Oxpecker/1.1.1": {
+        "dependencies": {
+          "FSharp.Core": "9.0.100",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "Oxpecker.ViewEngine": "1.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Oxpecker.dll": {
+            "assemblyVersion": "1.1.1.0",
+            "fileVersion": "1.1.1.0"
+          }
+        }
+      },
+      "Oxpecker.Htmx/1.0.0": {
+        "dependencies": {
+          "FSharp.Core": "9.0.100",
+          "Oxpecker.ViewEngine": "1.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Oxpecker.Htmx.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Oxpecker.OpenApi/1.0.0": {
+        "dependencies": {
+          "FSharp.Core": "9.0.100",
+          "Microsoft.AspNetCore.OpenApi": "9.0.0",
+          "Oxpecker": "1.1.1"
+        },
+        "runtime": {
+          "lib/net8.0/Oxpecker.OpenApi.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Oxpecker.ViewEngine/1.0.0": {
+        "dependencies": {
+          "FSharp.Core": "9.0.100",
+          "Microsoft.Extensions.ObjectPool": "9.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Oxpecker.ViewEngine.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ExpertGenerator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FSharp.Control.TaskSeq/0.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+GK6oSwfffZaLPaWTBPYfX8mgWxszRrX9BdFh5ZLgQwg3IL3u10YneSCusOJ1gZKmdXAgGt4O4M9I9bgRTpL0Q==",
+      "path": "fsharp.control.taskseq/0.4.0",
+      "hashPath": "fsharp.control.taskseq.0.4.0.nupkg.sha512"
+    },
+    "FSharp.Core/9.0.100": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ye8yagHGsH08H2Twno5GRWkSbrMtxK/SWiHuPcF+3nODpW65/VJ8RO0aWxp8n9+KQbmahg90wAEL3TEXjF0r6A==",
+      "path": "fsharp.core/9.0.100",
+      "hashPath": "fsharp.core.9.0.100.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.OpenApi/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FqUK5j1EOPNuFT7IafltZQ3cakqhSwVzH5ZW1MhZDe4pPXs9sJ2M5jom1Omsu+mwF2tNKKlRAzLRHQTZzbd+6Q==",
+      "path": "microsoft.aspnetcore.openapi/9.0.0",
+      "hashPath": "microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.ObjectPool/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UbsU/gYe4nv1DeqMXIVzDfNNek7Sk2kKuAOXL/Y+sLcAR0HwFUqzg1EPiU88jeHNe0g81aPvvHbvHarQr3r9IA==",
+      "path": "microsoft.extensions.objectpool/9.0.0",
+      "hashPath": "microsoft.extensions.objectpool.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.IO.RecyclableMemoryStream/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s/s20YTVY9r9TPfTrN5g8zPF1YhwxyqO6PxUkrYTGI2B+OGPe9AdajWZrLhFqXIvqIW23fnUE4+ztrUWNU1+9g==",
+      "path": "microsoft.io.recyclablememorystream/3.0.1",
+      "hashPath": "microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.OpenApi/1.6.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+      "path": "microsoft.openapi/1.6.17",
+      "hashPath": "microsoft.openapi.1.6.17.nupkg.sha512"
+    },
+    "Oxpecker/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oTQ9kOhGFu6LIwkeUI6loG6pYfxWdyoJFBuv6Sz3cVh/T51G37k+ZQxjzWyHCO21nwQklz13d2NZB3fw+DEH8w==",
+      "path": "oxpecker/1.1.1",
+      "hashPath": "oxpecker.1.1.1.nupkg.sha512"
+    },
+    "Oxpecker.Htmx/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BwEZ8RitZFz2bhxN9JJ/z71ue4D3IiwaxXxVK1HeClkIvA0PhRWapX8plm7yojHfosJ1IFtg56z7XFrtsqSdVw==",
+      "path": "oxpecker.htmx/1.0.0",
+      "hashPath": "oxpecker.htmx.1.0.0.nupkg.sha512"
+    },
+    "Oxpecker.OpenApi/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EErypJamm1iylzIho9larGIBe1G+gCa39hbgM8eAah1eY5ujUZUJSJkDacvNycutYHQS3BJIS/h+9htx1SXxrA==",
+      "path": "oxpecker.openapi/1.0.0",
+      "hashPath": "oxpecker.openapi.1.0.0.nupkg.sha512"
+    },
+    "Oxpecker.ViewEngine/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9NtWhsqAKOoRaSLkmCLyTKRtQA8ueAriwDewSd1a3ebdoERqTsbemeGMJmNv4wJE+rLozYOSH1tcaUve6x3GBg==",
+      "path": "oxpecker.viewengine/1.0.0",
+      "hashPath": "oxpecker.viewengine.1.0.0.nupkg.sha512"
+    }
+  }
+}

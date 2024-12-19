@@ -1,0 +1,482 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "FSharp.Control.TaskSeq/0.4.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "6.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/FSharp.Control.TaskSeq.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FSharp.Control.TaskSeq.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FSharp.Core/9.0.100": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/FSharp.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FSharp.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/netstandard2.1/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.1/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.1/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.1/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.1/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.1/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.1/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.1/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.1/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.1/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.1/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.OpenApi/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.17"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.Extensions.ObjectPool/9.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.ObjectPool.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.ObjectPool.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IO.RecyclableMemoryStream/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.OpenApi/1.6.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Oxpecker/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "9.0.100",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "Oxpecker.ViewEngine": "1.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Oxpecker.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Oxpecker.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Oxpecker.Htmx/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "9.0.100",
+          "Oxpecker.ViewEngine": "1.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Oxpecker.Htmx.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Oxpecker.Htmx.dll": {}
+        }
+      },
+      "Oxpecker.OpenApi/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "9.0.100",
+          "Microsoft.AspNetCore.OpenApi": "8.0.1",
+          "Oxpecker": "1.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Oxpecker.OpenApi.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Oxpecker.OpenApi.dll": {}
+        }
+      },
+      "Oxpecker.ViewEngine/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "9.0.100",
+          "Microsoft.Extensions.ObjectPool": "9.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Oxpecker.ViewEngine.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Oxpecker.ViewEngine.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FSharp.Control.TaskSeq/0.4.0": {
+      "sha512": "+GK6oSwfffZaLPaWTBPYfX8mgWxszRrX9BdFh5ZLgQwg3IL3u10YneSCusOJ1gZKmdXAgGt4O4M9I9bgRTpL0Q==",
+      "type": "package",
+      "path": "fsharp.control.taskseq/0.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fsharp.control.taskseq.0.4.0.nupkg.sha512",
+        "fsharp.control.taskseq.nuspec",
+        "lib/netstandard2.1/FSharp.Control.TaskSeq.dll",
+        "lib/netstandard2.1/FSharp.Control.TaskSeq.xml",
+        "nuget-package-readme.md",
+        "taskseq-icon.png"
+      ]
+    },
+    "FSharp.Core/9.0.100": {
+      "sha512": "ye8yagHGsH08H2Twno5GRWkSbrMtxK/SWiHuPcF+3nODpW65/VJ8RO0aWxp8n9+KQbmahg90wAEL3TEXjF0r6A==",
+      "type": "package",
+      "path": "fsharp.core/9.0.100",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "fsharp.core.9.0.100.nupkg.sha512",
+        "fsharp.core.nuspec",
+        "lib/netstandard2.0/FSharp.Core.dll",
+        "lib/netstandard2.0/FSharp.Core.xml",
+        "lib/netstandard2.0/cs/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/de/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/es/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/fr/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/it/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ja/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ko/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/pl/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ru/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/tr/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/FSharp.Core.dll",
+        "lib/netstandard2.1/FSharp.Core.xml",
+        "lib/netstandard2.1/cs/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/de/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/es/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/fr/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/it/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/ja/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/ko/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/pl/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/pt-BR/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/ru/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/tr/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll"
+      ]
+    },
+    "Microsoft.AspNetCore.OpenApi/9.0.0": {
+      "sha512": "FqUK5j1EOPNuFT7IafltZQ3cakqhSwVzH5ZW1MhZDe4pPXs9sJ2M5jom1Omsu+mwF2tNKKlRAzLRHQTZzbd+6Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.ObjectPool/9.0.0": {
+      "sha512": "UbsU/gYe4nv1DeqMXIVzDfNNek7Sk2kKuAOXL/Y+sLcAR0HwFUqzg1EPiU88jeHNe0g81aPvvHbvHarQr3r9IA==",
+      "type": "package",
+      "path": "microsoft.extensions.objectpool/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.Extensions.ObjectPool.dll",
+        "lib/net462/Microsoft.Extensions.ObjectPool.xml",
+        "lib/net9.0/Microsoft.Extensions.ObjectPool.dll",
+        "lib/net9.0/Microsoft.Extensions.ObjectPool.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.xml",
+        "microsoft.extensions.objectpool.9.0.0.nupkg.sha512",
+        "microsoft.extensions.objectpool.nuspec"
+      ]
+    },
+    "Microsoft.IO.RecyclableMemoryStream/3.0.1": {
+      "sha512": "s/s20YTVY9r9TPfTrN5g8zPF1YhwxyqO6PxUkrYTGI2B+OGPe9AdajWZrLhFqXIvqIW23fnUE4+ztrUWNU1+9g==",
+      "type": "package",
+      "path": "microsoft.io.recyclablememorystream/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.xml",
+        "lib/netstandard2.0/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/netstandard2.0/Microsoft.IO.RecyclableMemoryStream.xml",
+        "lib/netstandard2.1/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/netstandard2.1/Microsoft.IO.RecyclableMemoryStream.xml",
+        "microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512",
+        "microsoft.io.recyclablememorystream.nuspec"
+      ]
+    },
+    "Microsoft.OpenApi/1.6.17": {
+      "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+      "type": "package",
+      "path": "microsoft.openapi/1.6.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.6.17.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
+    "Oxpecker/1.1.1": {
+      "sha512": "oTQ9kOhGFu6LIwkeUI6loG6pYfxWdyoJFBuv6Sz3cVh/T51G37k+ZQxjzWyHCO21nwQklz13d2NZB3fw+DEH8w==",
+      "type": "package",
+      "path": "oxpecker/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0/Oxpecker.dll",
+        "oxpecker-128.png",
+        "oxpecker.1.1.1.nupkg.sha512",
+        "oxpecker.nuspec"
+      ]
+    },
+    "Oxpecker.Htmx/1.0.0": {
+      "sha512": "BwEZ8RitZFz2bhxN9JJ/z71ue4D3IiwaxXxVK1HeClkIvA0PhRWapX8plm7yojHfosJ1IFtg56z7XFrtsqSdVw==",
+      "type": "package",
+      "path": "oxpecker.htmx/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0/Oxpecker.Htmx.dll",
+        "oxpecker-128.png",
+        "oxpecker.htmx.1.0.0.nupkg.sha512",
+        "oxpecker.htmx.nuspec"
+      ]
+    },
+    "Oxpecker.OpenApi/1.0.0": {
+      "sha512": "EErypJamm1iylzIho9larGIBe1G+gCa39hbgM8eAah1eY5ujUZUJSJkDacvNycutYHQS3BJIS/h+9htx1SXxrA==",
+      "type": "package",
+      "path": "oxpecker.openapi/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0/Oxpecker.OpenApi.dll",
+        "oxpecker-128.png",
+        "oxpecker.openapi.1.0.0.nupkg.sha512",
+        "oxpecker.openapi.nuspec"
+      ]
+    },
+    "Oxpecker.ViewEngine/1.0.0": {
+      "sha512": "9NtWhsqAKOoRaSLkmCLyTKRtQA8ueAriwDewSd1a3ebdoERqTsbemeGMJmNv4wJE+rLozYOSH1tcaUve6x3GBg==",
+      "type": "package",
+      "path": "oxpecker.viewengine/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0/Oxpecker.ViewEngine.dll",
+        "oxpecker-128.png",
+        "oxpecker.viewengine.1.0.0.nupkg.sha512",
+        "oxpecker.viewengine.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "FSharp.Control.TaskSeq >= 0.4.0",
+      "FSharp.Core >= 9.0.100",
+      "Microsoft.AspNetCore.OpenApi >= 9.0.0",
+      "Oxpecker >= 1.1.1",
+      "Oxpecker.Htmx >= 1.0.0",
+      "Oxpecker.OpenApi >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Title\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Title\\RiderProjects\\ExpertGenerator\\ExpertGenerator\\ExpertGenerator.fsproj",
+      "projectName": "ExpertGenerator",
+      "projectPath": "C:\\Users\\Title\\RiderProjects\\ExpertGenerator\\ExpertGenerator\\ExpertGenerator.fsproj",
+      "packagesPath": "C:\\Users\\Title\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Title\\RiderProjects\\ExpertGenerator\\ExpertGenerator\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Title\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\9.0.101\\FSharp\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {}
+        }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "FSharp.Control.TaskSeq": {
+            "target": "Package",
+            "version": "[0.4.0, )",
+            "generatePathProperty": true
+          },
+          "FSharp.Core": {
+            "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[9.0.100, )",
+            "generatePathProperty": true
+          },
+          "Microsoft.AspNetCore.OpenApi": {
+            "target": "Package",
+            "version": "[9.0.0, )",
+            "generatePathProperty": true
+          },
+          "Oxpecker": {
+            "target": "Package",
+            "version": "[1.1.1, )",
+            "generatePathProperty": true
+          },
+          "Oxpecker.Htmx": {
+            "target": "Package",
+            "version": "[1.0.0, )",
+            "generatePathProperty": true
+          },
+          "Oxpecker.OpenApi": {
+            "target": "Package",
+            "version": "[1.0.0, )",
+            "generatePathProperty": true
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
