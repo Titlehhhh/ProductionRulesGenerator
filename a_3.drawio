@@ -1,0 +1,497 @@
+<mxfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
+  <diagram name="Страница — 1" id="-kKrlIgMizMViwl_gaRW">
+    <mxGraphModel dx="2283" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-1" value="Для чего нужен смартфон?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=1" parent="1" vertex="1">
+          <mxGeometry x="350" y="50" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-2" value="Какое качество фотографий вы хотите получить?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=2" parent="1" vertex="1">
+          <mxGeometry x="1950" y="210" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-4" value="Размер дисплея?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=3" parent="1" vertex="1">
+          <mxGeometry x="-150" y="230" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-7" value="Игры" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.914;entryY=0.18;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-1" target="AE7qcFesb_0c-C5-zf4g-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="290" as="sourcePoint" />
+            <mxPoint x="350" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-8" value="Фотографии" style="endArrow=classic;html=1;rounded=0;exitX=1.016;exitY=0.687;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-1" target="AE7qcFesb_0c-C5-zf4g-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="290" as="sourcePoint" />
+            <mxPoint x="480" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-9" value="Работа" style="endArrow=classic;html=1;rounded=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-1" target="AE7qcFesb_0c-C5-zf4g-65" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="290" as="sourcePoint" />
+            <mxPoint x="520" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-14" value="Много ли игр вы храните на телефоне?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=6" parent="1" vertex="1">
+          <mxGeometry x="10" y="360" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-15" value="Как часто используете смартфон?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=8" parent="1" vertex="1">
+          <mxGeometry x="-230" y="420" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-22" value="&amp;lt;6.1д" style="endArrow=classic;html=1;rounded=0;exitX=0.608;exitY=0.993;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-4" target="AE7qcFesb_0c-C5-zf4g-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="290" as="sourcePoint" />
+            <mxPoint x="560" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-23" value="&amp;gt;6.1д" style="endArrow=classic;html=1;rounded=0;exitX=0.091;exitY=0.812;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-4" target="AE7qcFesb_0c-C5-zf4g-15" edge="1">
+          <mxGeometry x="0.0007" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="290" as="sourcePoint" />
+            <mxPoint x="560" y="240" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-27" value="&amp;gt;5ч. в день" style="endArrow=classic;html=1;rounded=0;exitX=0.072;exitY=0.796;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-15" target="AE7qcFesb_0c-C5-zf4g-34" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="300" as="sourcePoint" />
+            <mxPoint x="30" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-28" value="2-5ч. в день" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-15" target="AE7qcFesb_0c-C5-zf4g-35" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="300" as="sourcePoint" />
+            <mxPoint x="160" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-34" value="&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, Roboto, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Noto Sans Armenian&amp;quot;, &amp;quot;Noto Sans Bengali&amp;quot;, &amp;quot;Noto Sans Cherokee&amp;quot;, &amp;quot;Noto Sans Devanagari&amp;quot;, &amp;quot;Noto Sans Ethiopic&amp;quot;, &amp;quot;Noto Sans Georgian&amp;quot;, &amp;quot;Noto Sans Hebrew&amp;quot;, &amp;quot;Noto Sans Kannada&amp;quot;, &amp;quot;Noto Sans Khmer&amp;quot;, &amp;quot;Noto Sans Lao&amp;quot;, &amp;quot;Noto Sans Osmanya&amp;quot;, &amp;quot;Noto Sans Tamil&amp;quot;, &amp;quot;Noto Sans Telugu&amp;quot;, &amp;quot;Noto Sans Thai&amp;quot;, sans-serif; font-size: 13px; letter-spacing: -0.091px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;Смартфон HUAWEI nova 11i&amp;nbsp;&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=24" parent="1" vertex="1">
+          <mxGeometry x="-370" y="635" width="75" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-35" value="Смартфон HONOR X8b" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=25" parent="1" vertex="1">
+          <mxGeometry x="-180" y="625" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-36" value="Нужна ли вам высокая плавность экрана?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=11" parent="1" vertex="1">
+          <mxGeometry y="500" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-37" value="Вам нужна высокая контрастность и насыщенность цветов?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=7" parent="1" vertex="1">
+          <mxGeometry x="200" y="410" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-38" value="Мало" style="endArrow=classic;html=1;rounded=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-14" target="AE7qcFesb_0c-C5-zf4g-37" edge="1">
+          <mxGeometry x="-0.0098" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="300" as="sourcePoint" />
+            <mxPoint x="540" y="250" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-39" value="Много" style="endArrow=classic;html=1;rounded=0;exitX=0.335;exitY=0.977;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-14" target="AE7qcFesb_0c-C5-zf4g-36" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="300" as="sourcePoint" />
+            <mxPoint x="540" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-47" value="Смартфон Apple iPhone 13 mini" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=27" parent="1" vertex="1">
+          <mxGeometry x="90" y="660" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-48" value="Смартфон ASUS Zenfone 9" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=26" parent="1" vertex="1">
+          <mxGeometry x="-60" y="670" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-49" value="Нет" style="endArrow=classic;html=1;rounded=0;exitX=0.8;exitY=0.912;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.477;entryY=0.059;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-36" target="AE7qcFesb_0c-C5-zf4g-47" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="430" as="sourcePoint" />
+            <mxPoint x="360" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-50" value="Да" style="endArrow=classic;html=1;rounded=0;entryX=0.591;entryY=0.028;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-36" target="AE7qcFesb_0c-C5-zf4g-48" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-20" y="590" as="sourcePoint" />
+            <mxPoint x="520" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-53" value="Смартфон Apple iPhone 11 Pro" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=29" parent="1" vertex="1">
+          <mxGeometry x="210" y="690" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-54" value="Смартфон Apple iPhone SE 2022" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=30" parent="1" vertex="1">
+          <mxGeometry x="334" y="695" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-55" value="Нет" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-37" target="AE7qcFesb_0c-C5-zf4g-54" edge="1">
+          <mxGeometry x="0.0018" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="430" as="sourcePoint" />
+            <mxPoint x="520" y="380" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-56" value="Да" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.625;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-37" target="AE7qcFesb_0c-C5-zf4g-53" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="560" as="sourcePoint" />
+            <mxPoint x="748.7" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-64" value="Много ли приложений вы используйте одновременно?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=9" parent="1" vertex="1">
+          <mxGeometry x="1030" y="480" width="105" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-65" value="Как часто вы будете заниматься монтажом видео или 3d моделированием?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=4" parent="1" vertex="1">
+          <mxGeometry x="610" y="320" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-66" value="Какое качество фотографий вы хотите получить?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=19" parent="1" vertex="1">
+          <mxGeometry x="680" y="690" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-69" value="Какой уровень защиты от воды и пыли нужен?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=21" parent="1" vertex="1">
+          <mxGeometry x="1360" y="710" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-77" value="Много ли фотографий вы будете хранить на телефоне?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=12" parent="1" vertex="1">
+          <mxGeometry x="2170" y="505" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-78" value="Нужна ли вам функция разблокировка экрана по отпечатку пальца?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=15" parent="1" vertex="1">
+          <mxGeometry x="470" y="605" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-80" value="Смартфон HONOR X9b" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=36" parent="1" vertex="1">
+          <mxGeometry x="1110" y="1000" width="85" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-86" value="Смартфон HUAWEI nova 12s" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=35" parent="1" vertex="1">
+          <mxGeometry x="960" y="1002.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-93" value="Нужна ли вам функция бесконтактной оплаты?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=22" parent="1" vertex="1">
+          <mxGeometry x="1010" y="740" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-94" value="Никогда" style="endArrow=classic;html=1;rounded=0;exitX=0.333;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-65" target="AE7qcFesb_0c-C5-zf4g-78" edge="1">
+          <mxGeometry x="0.0058" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="540" as="sourcePoint" />
+            <mxPoint x="840" y="490" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-95" value="Редко" style="endArrow=classic;html=1;rounded=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-65" target="AE7qcFesb_0c-C5-zf4g-66" edge="1">
+          <mxGeometry x="-0.0002" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="540" as="sourcePoint" />
+            <mxPoint x="840" y="490" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-96" value="Часто" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-65" target="AE7qcFesb_0c-C5-zf4g-64" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="540" as="sourcePoint" />
+            <mxPoint x="840" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-102" value="Много" style="endArrow=classic;html=1;rounded=0;exitX=0.419;exitY=1.019;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-64" target="AE7qcFesb_0c-C5-zf4g-93" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="540" as="sourcePoint" />
+            <mxPoint x="840" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-103" value="Мало" style="endArrow=classic;html=1;rounded=0;exitX=0.952;exitY=0.81;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-64" target="AE7qcFesb_0c-C5-zf4g-69" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="540" as="sourcePoint" />
+            <mxPoint x="840" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-106" value="Да" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-93" target="AE7qcFesb_0c-C5-zf4g-86" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="540" as="sourcePoint" />
+            <mxPoint x="840" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-110" value="Нет" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-93" target="AE7qcFesb_0c-C5-zf4g-80" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="650" as="sourcePoint" />
+            <mxPoint x="840" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-112" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Нужна ли вам камера с широким углом обзора, которая идеально подходит для пейзажей или групповых фотографий?&lt;/span&gt;&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=10" parent="1" vertex="1">
+          <mxGeometry x="1780" y="485" width="165" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-115" value="Смартфон Samsung Galaxy A35" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=37" parent="1" vertex="1">
+          <mxGeometry x="1380" y="1000" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-116" value="Смартфон Apple iPhone 13" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=40" parent="1" vertex="1">
+          <mxGeometry x="1870" y="1000" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-117" value="Смартфон Samsung Galaxy A55" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=38" parent="1" vertex="1">
+          <mxGeometry x="1630" y="1000" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-118" value="Минимальный" style="endArrow=classic;html=1;rounded=0;exitX=0.4;exitY=0.992;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-69" target="AE7qcFesb_0c-C5-zf4g-115" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="650" as="sourcePoint" />
+            <mxPoint x="840" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-119" value="Средний" style="endArrow=classic;html=1;rounded=0;exitX=0.742;exitY=0.908;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-69" target="AE7qcFesb_0c-C5-zf4g-117" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="650" as="sourcePoint" />
+            <mxPoint x="840" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-120" value="Высокий" style="endArrow=classic;html=1;rounded=0;exitX=0.975;exitY=0.692;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-69" target="AE7qcFesb_0c-C5-zf4g-116" edge="1">
+          <mxGeometry x="0.0002" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="650" as="sourcePoint" />
+            <mxPoint x="840" y="600" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-129" value="Среднее" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.545;exitY=0.955;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-66" target="AE7qcFesb_0c-C5-zf4g-152" edge="1">
+          <mxGeometry x="-0.0012" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="755" y="810" as="sourcePoint" />
+            <mxPoint x="680" y="1070" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-132" value="Да" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-78" target="AE7qcFesb_0c-C5-zf4g-149" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="700" as="sourcePoint" />
+            <mxPoint x="200" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-133" value="Нет" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-78" target="AE7qcFesb_0c-C5-zf4g-150" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="700" as="sourcePoint" />
+            <mxPoint x="420" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-143" value="Минимальное" style="endArrow=classic;html=1;rounded=0;exitX=0.223;exitY=0.918;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-66" target="AE7qcFesb_0c-C5-zf4g-151" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="880" as="sourcePoint" />
+            <mxPoint x="561.7358279948062" y="1046.4209323926402" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-146" value="Высокое" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-66" target="AE7qcFesb_0c-C5-zf4g-153" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="750" as="sourcePoint" />
+            <mxPoint x="830" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-149" value="Смартфон Samsung Galaxy A15" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=28" parent="1" vertex="1">
+          <mxGeometry x="190" y="980" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-150" value="Смартфон HONOR X7b" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=31" parent="1" vertex="1">
+          <mxGeometry x="340" y="1050" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-151" value="Смартфон HONOR 90 Lite" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=32" parent="1" vertex="1">
+          <mxGeometry x="510" y="1040" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-152" value="Смартфон Samsung Galaxy A25" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=33" parent="1" vertex="1">
+          <mxGeometry x="660" y="1020" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AE7qcFesb_0c-C5-zf4g-153" value="Смартфон Samsung Galaxy A55" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=34" parent="1" vertex="1">
+          <mxGeometry x="790" y="1010" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HIkw8XK-dq2q8IoSmfbf-2" value="Нужна ли вам камера для ночной съемки?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=13" parent="1" vertex="1">
+          <mxGeometry x="2942.5" y="510" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HIkw8XK-dq2q8IoSmfbf-3" value="Минимальное" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-2" target="AE7qcFesb_0c-C5-zf4g-112" edge="1">
+          <mxGeometry x="-0.0165" y="-6" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1960" y="310" as="sourcePoint" />
+            <mxPoint x="1918" y="517" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HIkw8XK-dq2q8IoSmfbf-4" value="Среднее" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-2" target="AE7qcFesb_0c-C5-zf4g-77" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1910" y="380" as="sourcePoint" />
+            <mxPoint x="1960" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HIkw8XK-dq2q8IoSmfbf-5" value="Высокое" style="endArrow=classic;html=1;rounded=0;exitX=0.92;exitY=0.766;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.091;entryY=0.289;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-2" target="HIkw8XK-dq2q8IoSmfbf-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1910" y="380" as="sourcePoint" />
+            <mxPoint x="2690" y="395" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HIkw8XK-dq2q8IoSmfbf-11" value="Какое качество видео вам нужно?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=5" parent="1" vertex="1">
+          <mxGeometry x="2580" y="345" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="HIkw8XK-dq2q8IoSmfbf-12" value="Планируете ли вы пользоваться селфи или видеозвонками?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=18" parent="1" vertex="1">
+          <mxGeometry x="2935" y="687.5" width="115" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="HIkw8XK-dq2q8IoSmfbf-13" value="Да" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.352;exitY=1.022;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="HIkw8XK-dq2q8IoSmfbf-2" target="HIkw8XK-dq2q8IoSmfbf-12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2900" y="650" as="sourcePoint" />
+            <mxPoint x="2930" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HIkw8XK-dq2q8IoSmfbf-14" value="Нет" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.037;entryY=0.401;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="HIkw8XK-dq2q8IoSmfbf-2" target="WoXNDD9iEnVcPg2UKbSk-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3140" y="230" as="sourcePoint" />
+            <mxPoint x="3060" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HIkw8XK-dq2q8IoSmfbf-17" value="Нужна ли вам функция замедленной съемки?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=16" parent="1" vertex="1">
+          <mxGeometry x="2430" y="620" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="HIkw8XK-dq2q8IoSmfbf-18" value="Важна ли для вас возможность записи видео с высокой плавностью движения?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=17" parent="1" vertex="1">
+          <mxGeometry x="2690" y="625" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="HIkw8XK-dq2q8IoSmfbf-19" value="Нужен ли вам оптический зум, который позволяет увеличить изображение без потери качества?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=20" parent="1" vertex="1">
+          <mxGeometry x="2060" y="700" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="HIkw8XK-dq2q8IoSmfbf-20" value="Минимальное" style="endArrow=classic;html=1;rounded=0;exitX=0.295;exitY=0.922;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.774;entryY=0.07;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="HIkw8XK-dq2q8IoSmfbf-11" target="HIkw8XK-dq2q8IoSmfbf-17" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2760" y="690" as="sourcePoint" />
+            <mxPoint x="2810" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HIkw8XK-dq2q8IoSmfbf-21" value="Среднее" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.693;exitY=0.993;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="HIkw8XK-dq2q8IoSmfbf-11" target="HIkw8XK-dq2q8IoSmfbf-18" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2822" y="710" as="sourcePoint" />
+            <mxPoint x="2810" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HIkw8XK-dq2q8IoSmfbf-22" value="Высокое" style="endArrow=classic;html=1;rounded=0;exitX=0.917;exitY=0.826;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.288;entryY=0.068;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="HIkw8XK-dq2q8IoSmfbf-11" target="HIkw8XK-dq2q8IoSmfbf-2" edge="1">
+          <mxGeometry x="0.0073" y="-3" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2760" y="690" as="sourcePoint" />
+            <mxPoint x="2870" y="550" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-2" value="Да" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.563;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="HIkw8XK-dq2q8IoSmfbf-12" target="WoXNDD9iEnVcPg2UKbSk-9" edge="1">
+          <mxGeometry x="-0.0094" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3150" y="550" as="sourcePoint" />
+            <mxPoint x="2900" y="860" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-3" value="Нет" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HIkw8XK-dq2q8IoSmfbf-12" target="WoXNDD9iEnVcPg2UKbSk-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3150" y="550" as="sourcePoint" />
+            <mxPoint x="3020" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-4" value="&amp;nbsp;Нужна ли вам камера, которая позволяет делать детализированные снимки мелких объектов?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=14" parent="1" vertex="1">
+          <mxGeometry x="3220" y="570" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-6" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Смартфон Xiaomi 13T&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=53" parent="1" vertex="1">
+          <mxGeometry x="3420" y="750" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-7" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Смартфон Apple iPhone 15&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=52" parent="1" vertex="1">
+          <mxGeometry x="3270" y="860" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-8" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Смартфон POCO X6&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=51" parent="1" vertex="1">
+          <mxGeometry x="3100" y="860" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-9" value="Смартфон Samsung Galaxy S24 Ultra" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=50" parent="1" vertex="1">
+          <mxGeometry x="2910" y="900" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-10" value="Да" style="endArrow=classic;html=1;rounded=0;exitX=0.39;exitY=0.98;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.391;entryY=0.052;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="WoXNDD9iEnVcPg2UKbSk-4" target="WoXNDD9iEnVcPg2UKbSk-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2690" y="700" as="sourcePoint" />
+            <mxPoint x="2740" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-11" value="Нет" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="WoXNDD9iEnVcPg2UKbSk-4" target="WoXNDD9iEnVcPg2UKbSk-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2690" y="700" as="sourcePoint" />
+            <mxPoint x="2740" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-13" value="Много" style="endArrow=classic;html=1;rounded=0;exitX=0.194;exitY=0.924;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.605;entryY=0.065;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-77" target="HIkw8XK-dq2q8IoSmfbf-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2190" y="510" as="sourcePoint" />
+            <mxPoint x="2240" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-15" value="Мало" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.318;entryY=-0.005;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-77" target="WoXNDD9iEnVcPg2UKbSk-35" edge="1">
+          <mxGeometry x="-0.0037" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2190" y="510" as="sourcePoint" />
+            <mxPoint x="2280" y="740" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-16" value="Смартфон Apple iPhone 15" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=48" parent="1" vertex="1">
+          <mxGeometry x="2640" y="880" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-17" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Смартфон Samsung Galaxy A35&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=49" parent="1" vertex="1">
+          <mxGeometry x="2780" y="860" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-18" value="Да" style="endArrow=classic;html=1;rounded=0;exitX=0.216;exitY=0.933;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HIkw8XK-dq2q8IoSmfbf-18" target="WoXNDD9iEnVcPg2UKbSk-16" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2430" y="720" as="sourcePoint" />
+            <mxPoint x="2480" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-19" value="Нет" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.731;exitY=0.942;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="HIkw8XK-dq2q8IoSmfbf-18" target="WoXNDD9iEnVcPg2UKbSk-17" edge="1">
+          <mxGeometry x="-0.0018" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2779" y="797" as="sourcePoint" />
+            <mxPoint x="2480" y="670" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-21" value="Смартфон Xiaomi 13T" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=46" parent="1" vertex="1">
+          <mxGeometry x="2430" y="840" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-22" value="Смартфон Tecno SPARK 20 Pro" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=47" parent="1" vertex="1">
+          <mxGeometry x="2550" y="830" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-23" value="Да" style="endArrow=classic;html=1;rounded=0;exitX=0.222;exitY=0.892;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HIkw8XK-dq2q8IoSmfbf-17" target="WoXNDD9iEnVcPg2UKbSk-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2430" y="720" as="sourcePoint" />
+            <mxPoint x="2480" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-24" value="Нет" style="endArrow=classic;html=1;rounded=0;exitX=0.72;exitY=0.988;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HIkw8XK-dq2q8IoSmfbf-17" target="WoXNDD9iEnVcPg2UKbSk-22" edge="1">
+          <mxGeometry x="0.0072" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2430" y="720" as="sourcePoint" />
+            <mxPoint x="2480" y="670" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-26" value="Смартфон Xiaomi Redmi 12" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=39" parent="1" vertex="1">
+          <mxGeometry x="1700" y="740" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-27" value="Смартфон realme C67" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=41" parent="1" vertex="1">
+          <mxGeometry x="1910" y="725" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-28" value="Да" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-112" target="WoXNDD9iEnVcPg2UKbSk-26" edge="1">
+          <mxGeometry x="0.0085" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1800" y="730" as="sourcePoint" />
+            <mxPoint x="1850" y="680" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-29" value="Нет" style="endArrow=classic;html=1;rounded=0;exitX=0.788;exitY=0.939;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AE7qcFesb_0c-C5-zf4g-112" target="WoXNDD9iEnVcPg2UKbSk-27" edge="1">
+          <mxGeometry x="0.0031" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1800" y="730" as="sourcePoint" />
+            <mxPoint x="1850" y="680" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-30" value="Смартфон POCO X6" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=42" parent="1" vertex="1">
+          <mxGeometry x="1965" y="890" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-31" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Смартфон Xiaomi Redmi Note 13&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=43" parent="1" vertex="1">
+          <mxGeometry x="2080" y="900" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-32" value="Да" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HIkw8XK-dq2q8IoSmfbf-19" target="WoXNDD9iEnVcPg2UKbSk-30" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2020" y="910" as="sourcePoint" />
+            <mxPoint x="2070" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-33" value="Нет" style="endArrow=classic;html=1;rounded=0;exitX=0.708;exitY=0.956;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.4;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="HIkw8XK-dq2q8IoSmfbf-19" target="WoXNDD9iEnVcPg2UKbSk-31" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2020" y="910" as="sourcePoint" />
+            <mxPoint x="2070" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-35" value="Вы предпочитаете естественные и реалистичные цвета?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=23" parent="1" vertex="1">
+          <mxGeometry x="2280" y="805" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-36" value="Нет" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="WoXNDD9iEnVcPg2UKbSk-35" target="WoXNDD9iEnVcPg2UKbSk-38" edge="1">
+          <mxGeometry x="0.003" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2200" y="630" as="sourcePoint" />
+            <mxPoint x="2250" y="580" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-37" value="Смартфон Tecno SPARK 20 Pro" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=44" parent="1" vertex="1">
+          <mxGeometry x="2210" y="940" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-38" value="&lt;div&gt;Смартфон Xiaomi Redmi Note 13 Pro&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;;enumerate=1;enumerateValue=45" parent="1" vertex="1">
+          <mxGeometry x="2360" y="950" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WoXNDD9iEnVcPg2UKbSk-39" value="Да" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="WoXNDD9iEnVcPg2UKbSk-35" target="WoXNDD9iEnVcPg2UKbSk-37" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2200" y="630" as="sourcePoint" />
+            <mxPoint x="2250" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
