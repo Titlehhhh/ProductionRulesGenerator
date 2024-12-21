@@ -29,6 +29,6 @@ let html =
                     }                     
                 }
             }
-            script (src = "/script.js")    
+            script (src = "/home.js")    
         }
     }

@@ -1,23 +1,38 @@
-﻿open ExpertGenerator.templates
+﻿open System
+open ExpertGenerator
+open ExpertGenerator.Database
+open ExpertGenerator.templates
 open Microsoft.AspNetCore.Builder
 open Microsoft.AspNetCore.Http
 open Microsoft.Extensions.DependencyInjection
 open Microsoft.Extensions.Hosting
 open Microsoft.Extensions.Logging
 open Oxpecker
+open Oxpecker.ViewEngine
 open XmlModels
+open Database
 
 
 let uploadFile (ctx: HttpContext) =
     let file = ctx.Request.Form.Files["file"]
-
-    ctx.Items["mxFile"] = ParserDrawIO.DeserializeFile(file.OpenReadStream())
+    use stream = file.OpenReadStream()
+    
+    let mxFile = ParserDrawIO.DeserializeFile(stream)
+    ctx.Items["mxFile"] = mxFile
+    
+    let user: User = {
+        Id = Guid.NewGuid()
+        MxFile = mxFile
+        Tree = null      
+    }
+    Database.add user
+    ctx.Response.Cookies.Append("UserID", user.Id.ToString())
     ctx |> redirectTo "/settings" false
 
 let endpoints = [
     GET [
         route "/" <| (htmlView home.html)
-        route "/settings" <| settings.html
+        route "/settings" <| Handlers.settings
     ]
     POST [ route "/upload" <| uploadFile ]
 ]
