@@ -6,7 +6,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="test.fs" />
         <Compile Include="templates\home.fs" />  
+        <Compile Include="templates\main.fs" />  
+        <Compile Include="templates\settings.fs" />  
         <Compile Include="Program.fs"/>
         
     </ItemGroup>
@@ -14,8 +17,15 @@
         <PackageReference Include="FSharp.Control.TaskSeq" Version="0.4.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
         <PackageReference Include="Oxpecker" Version="1.1.1" />
+        <PackageReference Include="Oxpecker.Solid" Version="0.4.0" />
         <PackageReference Include="Oxpecker.Htmx" Version="1.0.0" />
         <PackageReference Include="Oxpecker.OpenApi" Version="1.0.0" />
+        <PackageReference Include="Fable.Browser.Dom" Version="2.18.0" />
+        <PackageReference Include="Fable.Core" Version="4.3.0" />
+        <PackageReference Include="Thoth.Fetch" Version="3.0.1" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\XmlModels\XmlModels.csproj" />
     </ItemGroup>
 
 </Project>
