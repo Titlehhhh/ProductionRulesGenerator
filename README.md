@@ -11,4 +11,4 @@ a_3.drawio файл в корне проекта
 
 # Видео
 
-![showcase](showcase.mp4)
+![showcase](showcase.gif)
