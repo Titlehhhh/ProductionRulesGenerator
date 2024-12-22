@@ -15,6 +15,6 @@ let settings (ctx: HttpContext) =
         let diagrams = user.MxFile.Diagram                       
                        |> Seq.map (fun diagram -> (diagram.Id, diagram.Name))
                        |> Seq.toList
-        let html = settings.html diagrams
+        let html = settings.html diagrams        
         ctx.WriteHtmlView html
     | _ -> Task.CompletedTask
