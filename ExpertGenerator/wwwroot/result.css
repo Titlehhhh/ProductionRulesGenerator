@@ -1,0 +1,82 @@
+﻿.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Две строки, каждая занимает половину экрана */
+    height: 100vh; /* Высота = высота экрана */
+    gap: 10px; /* Расстояние между таблицами */
+    padding: 10px; /* Отступы для красоты */
+    background-color: #f4f4f9;
+}
+
+/* Общий стиль для таблиц */
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Заголовок таблицы */
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.table-header h2 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.download-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #218838;
+}
+
+/* Таблица */
+.table-content {
+    flex: 1; /* Занимает оставшееся место */
+    overflow-y: auto; /* Вертикальная прокрутка */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px 16px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #007bff;
+    color: #ffffff;
+    z-index: 1;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}

@@ -7,9 +7,12 @@
 
     <ItemGroup>
         <Compile Include="Database.fs" />
+        <Compile Include="Models.fs" />
+        <Compile Include="TableGenerator.fs" />
         <Compile Include="templates\home.fs" />  
-        <Compile Include="templates\main.fs" />  
+        <Compile Include="templates\start.fs" />  
         <Compile Include="templates\settings.fs" />        
+        <Compile Include="templates\resultTables.fs" />        
         <Compile Include="Handlers.fs" />        
         <Compile Include="Program.fs"/>
         

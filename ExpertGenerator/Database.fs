@@ -13,7 +13,7 @@ type User = {
 let private dict = Dictionary<Guid, User>()
 
 let add (user: User) =
-    dict.Add(user.Id, user)
+    dict.[user.Id] <- user
 
 let get (id: Guid) =
     dict.[id]

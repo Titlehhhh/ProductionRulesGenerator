@@ -1,4 +1,6 @@
 ﻿open System
+open System.IO
+open System.Threading.Tasks
 open ExpertGenerator
 open ExpertGenerator.Database
 open ExpertGenerator.templates
@@ -15,11 +17,8 @@ open Database
 
 let uploadFile (ctx: HttpContext) =
     let file = ctx.Request.Form.Files["file"]
-    use stream = file.OpenReadStream()
-    
-    let mxFile = ParserDrawIO.DeserializeFile(stream)
-    ctx.Items["mxFile"] = mxFile
-    
+    use stream = file.OpenReadStream()    
+    let mxFile = ParserDrawIO.DeserializeFile(stream)    
     let user: User = {
         Id = Guid.NewGuid()
         MxFile = mxFile
@@ -29,12 +28,29 @@ let uploadFile (ctx: HttpContext) =
     ctx.Response.Cookies.Append("UserID", user.Id.ToString())
     ctx |> redirectTo "/settings" false
 
+let generate (ctx: HttpContext) =
+    let selectedIndex = ctx.Request.Form.["diagram"].ToString()
+    let user = Database.get (Guid.Parse(ctx.Request.Cookies["UserID"]))
+    let diagram = user.MxFile.Diagram.[int selectedIndex]
+    let tree = ParserDrawIO.Parse(diagram, user.MxFile)
+    Database.add { user with Tree = tree }
+    ctx.Response.Headers.Add("HX-Redirect", "/result")
+    Task.CompletedTask
+
+let result (ctx: HttpContext) =
+    let user = Database.get (Guid.Parse(ctx.Request.Cookies["UserID"]))
+    let tree = user.Tree
+    let html = resultTables.html tree
+    ctx.WriteHtmlView html
+        
 let endpoints = [
     GET [
         route "/" <| (htmlView home.html)
         route "/settings" <| Handlers.settings
+        route "/result" <| result
     ]
-    POST [ route "/upload" <| uploadFile ]
+    POST [ route "/upload" <| uploadFile
+           route "/generate" <| generate ]
 ]
 
 let configureApp (appBuilder: WebApplication) =

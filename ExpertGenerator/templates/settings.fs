@@ -21,18 +21,19 @@ let html (diagrams: (string * string) list) =
                 crossorigin = "anonymous"
             )
         }
-        
-        body (hxBoost=true) {
-            div (class' = "container") {
-                h1 () { "Settings" }
 
-                form (action = "/generate", method = "post") {
-                    select (name = "diagram") {                                                    
-                        for d in diagrams do
-                            option () { $"{snd d}" }
+        body (hxBoost = true) {
+            div (class' = "container") {
+                h1 () { "Выберите страницу" }
+
+                form (action = "/generate", method = "post", hxBoost=true) {
+                    select (name = "diagram") {
+                        for i, d in diagrams |> List.indexed do
+                            option (value = string i) { $"{snd d}" }
                     }
-                    button (type' = "submit") { "Select" }
+                    button (type' = "submit", style = "margin-left: 10px") { "Select" }
                 }
             }
+
         }
     }
