@@ -14,6 +14,7 @@ type User = {
     MxFile: MxFile
     Tree: Tree
     Files: Map<string, File>
+    SelectedIndex : int
 }
 
 let private dict = Dictionary<Guid, User>()

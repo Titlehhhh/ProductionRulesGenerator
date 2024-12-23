@@ -81,7 +81,7 @@ tbody tr:hover {
 
 .demoTabs {
     display: block;
-    
+
 }
 
 .demoTabs__content {
@@ -105,14 +105,14 @@ tbody tr:hover {
     display: inline-block;
     font-weight: 700;
     padding: 5px 10px;
-    margin: 0;    
+    margin: 0;
     background-color: #4e7bc1;
     color: #fff;
     cursor: pointer;
 }
 
 .demoTabs__label:hover {
-    
+
     background-color: #3e6494;
 }
 
@@ -121,18 +121,7 @@ tbody tr:hover {
 }
 
 .demoTabs #demoTab-1:checked ~ .demoTabs__content .demoTabs__area[data-tab="demoTab-1"],
-.demoTabs #demoTab-2:checked ~ .demoTabs__content .demoTabs__area[data-tab="demoTab-2"]{
+.demoTabs #demoTab-2:checked ~ .demoTabs__content .demoTabs__area[data-tab="demoTab-2"] {
     display: block;
 }
 
-.diagram {
-    margin-top: 100px;
-    border:0;
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    width:100%;
-    height:100%
-}

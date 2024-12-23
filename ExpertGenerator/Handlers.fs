@@ -12,6 +12,7 @@ let settings (ctx: HttpContext) =
     match ctx.Request.Cookies.TryGetValue("UserID") with
     | true, userID ->
         let user = Database.get (Guid.Parse(userID))
+        
         let diagrams = user.MxFile.Diagram                       
                        |> Seq.map (fun diagram -> (diagram.Id, diagram.Name))
                        |> Seq.toList

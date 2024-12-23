@@ -28,7 +28,7 @@ let html (variables: ResultItem array) (knownVariables: KnowledgeItem seq) =
 
         }
 
-        body () {
+        body().on("load","loadDiagram()") {
             div (class' = "demoTabs") {
                 input (class' = "demoTabs__tab", type' = "radio", name = "demoTab", id = "demoTab-1", checked' = true)
                 label (class' = "demoTabs__label", for' = "demoTab-1") { "Таблицы" }
@@ -104,11 +104,10 @@ let html (variables: ResultItem array) (knownVariables: KnowledgeItem seq) =
 
                     // Диаграмма
                     div(class' = "demoTabs__area").attr ("data-tab", "demoTab-2") {
-                        button().on("click","edit();") {"Hi"}
-                        script() {
-                            "var doc = document.documentElement.outerHTML;"
+                        div(id = "diagram-area") {
+                            //iframe(id="diagram-iframe", src="https://embed.diagrams.net/?embed=1", class'="diagram")
                         }
-                        script (src = "https://www.draw.io/embed.js", type' = "text/javascript")
+                        
                     }
                 }
             }

@@ -114,6 +114,16 @@ public static class ParserDrawIO
             return false;
         return !string.IsNullOrWhiteSpace(cell.Source) && !string.IsNullOrWhiteSpace(cell.Target);
     }
+
+    private static MxGraphModelSerializer MxGraphModelSerializer = new();
+
+    public static string SerializeMxGraphModel(MxGraphModel mxGraphModel)
+    {
+        using StringWriter writer = new StringWriter();
+        MxGraphModelSerializer.Serialize(writer, mxGraphModel);
+        return writer.ToString();
+    }
+
     public static string SerializeFile(MxFile file)
     {
         using StringWriter writer = new StringWriter();

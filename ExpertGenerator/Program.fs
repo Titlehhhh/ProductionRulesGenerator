@@ -25,6 +25,7 @@ let uploadFile (ctx: HttpContext) =
         MxFile = mxFile
         Tree = null
         Files = Map.empty
+        SelectedIndex = 0
     }
     Database.add user
     ctx.Response.Cookies.Append("UserID", user.Id.ToString())
@@ -35,7 +36,7 @@ let generate (ctx: HttpContext) =
     let user = Database.get (Guid.Parse(ctx.Request.Cookies["UserID"]))
     let diagram = user.MxFile.Diagram.[int selectedIndex]
     let tree = ParserDrawIO.Parse(diagram, user.MxFile)
-    Database.add { user with Tree = tree }
+    Database.add { user with Tree = tree; SelectedIndex = selectedIndex |> int }
     ctx.Response.Headers.Add("HX-Redirect", "/result")
     Task.CompletedTask
 
@@ -56,7 +57,10 @@ let result (ctx: HttpContext) =
                              |> String.concat Environment.NewLine
                              |> Encoding.UTF8.GetBytes
     
-    let markedDiagram = ParserDrawIO.SerializeFile(tree.XmlModel) |> Encoding.UTF8.GetBytes
+    let markedDiagram = ParserDrawIO.SerializeMxGraphModel(user.MxFile.Diagram[user.SelectedIndex].MxGraphModel)
+                        |> Encoding.UTF8.GetBytes
+                        
+                        
     let filesMap = Map.empty
                     .Add("variables", { Id = "variables"; File = variablesFile; Type = "text/csv"; Name = "variables.csv" })
                     .Add("knowledges", { Id = "knowledges"; File = knownVariablesFile; Type = "text/csv"; Name = "knowledges.csv" })
@@ -64,6 +68,7 @@ let result (ctx: HttpContext) =
     let newUser = {
         Id = userId
         MxFile = user.MxFile
+        SelectedIndex = user.SelectedIndex
         Tree = tree
         Files = filesMap
     }
