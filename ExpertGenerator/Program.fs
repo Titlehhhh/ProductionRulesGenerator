@@ -1,5 +1,6 @@
 ﻿open System
 open System.IO
+open System.Text
 open System.Threading.Tasks
 open ExpertGenerator
 open ExpertGenerator.Database
@@ -22,7 +23,8 @@ let uploadFile (ctx: HttpContext) =
     let user: User = {
         Id = Guid.NewGuid()
         MxFile = mxFile
-        Tree = null      
+        Tree = null
+        Files = Map.empty
     }
     Database.add user
     ctx.Response.Cookies.Append("UserID", user.Id.ToString())
@@ -38,16 +40,55 @@ let generate (ctx: HttpContext) =
     Task.CompletedTask
 
 let result (ctx: HttpContext) =
-    let user = Database.get (Guid.Parse(ctx.Request.Cookies["UserID"]))
+    let userId = Guid.Parse(ctx.Request.Cookies["UserID"])
+    let user = Database.get (userId)
     let tree = user.Tree
-    let html = resultTables.html tree
+    let variables = TableGenerator.getVariables tree
+    let knownVariables = TableGenerator.generateKnowledgeBase tree.Root
+    
+    let variablesFile = variables
+                        |> Seq.map(fun x-> $"{x.Id};{x.Name};{x.Value}")
+                        |> String.concat Environment.NewLine
+                        |> Encoding.UTF8.GetBytes
+    
+    let knownVariablesFile = knownVariables
+                             |> Seq.map(fun x-> $"{x.Number};{x.Conditions};{x.Path}")
+                             |> String.concat Environment.NewLine
+                             |> Encoding.UTF8.GetBytes
+    
+    let markedDiagram = ParserDrawIO.SerializeFile(tree.XmlModel) |> Encoding.UTF8.GetBytes
+    let filesMap = Map.empty
+                    .Add("variables", { Id = "variables"; File = variablesFile; Type = "text/csv"; Name = "variables.csv" })
+                    .Add("knowledges", { Id = "knowledges"; File = knownVariablesFile; Type = "text/csv"; Name = "knowledges.csv" })
+                    .Add("diagram", { Id = "diagram"; File = markedDiagram; Type = "text/xml"; Name = "diagram.drawio" })
+    let newUser = {
+        Id = userId
+        MxFile = user.MxFile
+        Tree = tree
+        Files = filesMap
+    }
+    
+    Database.add newUser   
+    
+    let html = resultTables.html variables knownVariables
     ctx.WriteHtmlView html
+  
+let download (id: string) : EndpointHandler =
+    fun (ctx: HttpContext) ->
+        task {
+            let user = Database.get (Guid.Parse(ctx.Request.Cookies["UserID"]))
+            let file = user.Files.[id]
+            ctx.Response.ContentType <- file.Type
+            ctx.Response.Body.WriteAsync file.File |> ignore
+        } :> Task
         
+    
 let endpoints = [
     GET [
         route "/" <| (htmlView home.html)
         route "/settings" <| Handlers.settings
         route "/result" <| result
+        routef "/download/{%s}" <| download 
     ]
     POST [ route "/upload" <| uploadFile
            route "/generate" <| generate ]

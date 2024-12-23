@@ -1,13 +1,12 @@
 ﻿.grid-container {
     display: grid;
-    grid-template-rows: 1fr 1fr; /* Две строки, каждая занимает половину экрана */
-    height: 100vh; /* Высота = высота экрана */
-    gap: 10px; /* Расстояние между таблицами */
-    padding: 10px; /* Отступы для красоты */
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
     background-color: #f4f4f9;
 }
 
-/* Общий стиль для таблиц */
 .table-wrapper {
     display: flex;
     flex-direction: column;
@@ -18,7 +17,6 @@
     overflow: hidden;
 }
 
-/* Заголовок таблицы */
 .table-header {
     display: flex;
     justify-content: space-between;
@@ -48,10 +46,9 @@
     background-color: #218838;
 }
 
-/* Таблица */
 .table-content {
-    flex: 1; /* Занимает оставшееся место */
-    overflow-y: auto; /* Вертикальная прокрутка */
+    flex: 1;
+    overflow-y: auto;
 }
 
 table {
@@ -59,7 +56,8 @@ table {
     border-collapse: collapse;
 }
 
-table th, table td {
+table th,
+table td {
     padding: 12px 16px;
     border: 1px solid #dddddd;
     text-align: left;
@@ -79,4 +77,62 @@ tbody tr:nth-child(odd) {
 
 tbody tr:hover {
     background-color: #f1f1f1;
+}
+
+.demoTabs {
+    display: block;
+    
+}
+
+.demoTabs__content {
+    border-top: 2px solid red;
+    padding: 16px;
+}
+
+.demoTabs__tab {
+    display: none;
+}
+
+.demoTabs__area {
+    display: none;
+}
+
+.demoTabs__area p {
+    margin-bottom: 16px;
+}
+
+.demoTabs__label {
+    display: inline-block;
+    font-weight: 700;
+    padding: 5px 10px;
+    margin: 0;    
+    background-color: #4e7bc1;
+    color: #fff;
+    cursor: pointer;
+}
+
+.demoTabs__label:hover {
+    
+    background-color: #3e6494;
+}
+
+.demoTabs__tab:checked + .demoTabs__label {
+    background-color: #3e6494;
+}
+
+.demoTabs #demoTab-1:checked ~ .demoTabs__content .demoTabs__area[data-tab="demoTab-1"],
+.demoTabs #demoTab-2:checked ~ .demoTabs__content .demoTabs__area[data-tab="demoTab-2"]{
+    display: block;
+}
+
+.diagram {
+    margin-top: 100px;
+    border:0;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%
 }

@@ -114,7 +114,12 @@ public static class ParserDrawIO
             return false;
         return !string.IsNullOrWhiteSpace(cell.Source) && !string.IsNullOrWhiteSpace(cell.Target);
     }
-
+    public static string SerializeFile(MxFile file)
+    {
+        using StringWriter writer = new StringWriter();
+        Serializer.Serialize(writer, file);
+        return writer.ToString();
+    }
 
     private static readonly MxFileSerializer Serializer = new();
 
