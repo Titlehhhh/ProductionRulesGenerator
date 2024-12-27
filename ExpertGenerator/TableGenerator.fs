@@ -7,6 +7,14 @@ type ResultItem =
       Name: string
       Value: string }
 
+let getResults (diagram: Tree) =
+    let results = ResizeArray()
+    for node in diagram do
+        match node.Value with
+        | :? Result as result -> results.Add(result)
+        | _ -> ()
+    results.ToArray()
+
 let getVariables (diagram: Tree) =
     let results = ResizeArray<ResultItem>()
     let leaves = ResizeArray<Result>()

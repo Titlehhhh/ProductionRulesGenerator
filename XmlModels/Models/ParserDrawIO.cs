@@ -110,8 +110,8 @@ public static class ParserDrawIO
 
     private static bool IsArrow(MxCell cell)
     {
-        if (cell.MxGeometry?.MxPoints.Count == 0)
-            return false;
+        
+        
         return !string.IsNullOrWhiteSpace(cell.Source) && !string.IsNullOrWhiteSpace(cell.Target);
     }
 

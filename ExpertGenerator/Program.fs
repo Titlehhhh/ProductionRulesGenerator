@@ -46,6 +46,7 @@ let result (ctx: HttpContext) =
     let tree = user.Tree
     let variables = TableGenerator.getVariables tree
     let knownVariables = TableGenerator.generateKnowledgeBase tree.Root
+    let resultsList = TableGenerator.getResults tree
     
     let variablesFile = variables
                         |> Seq.map(fun x-> $"{x.Id};{x.Name};{x.Value}")
@@ -60,11 +61,17 @@ let result (ctx: HttpContext) =
     let markedDiagram = ParserDrawIO.SerializeMxGraphModel(user.MxFile.Diagram[user.SelectedIndex].MxGraphModel)
                         |> Encoding.UTF8.GetBytes
                         
+    let results = resultsList
+                  |> Seq.map(fun x -> $"{x.Id};{x.Name}")
+                  |> String.concat Environment.NewLine
+                  |> Encoding.UTF8.GetBytes
+                        
                         
     let filesMap = Map.empty
                     .Add("variables", { Id = "variables"; File = variablesFile; Type = "text/csv"; Name = "variables.csv" })
                     .Add("knowledges", { Id = "knowledges"; File = knownVariablesFile; Type = "text/csv"; Name = "knowledges.csv" })
                     .Add("diagram", { Id = "diagram"; File = markedDiagram; Type = "text/xml"; Name = "diagram.drawio" })
+                    .Add("results", { Id = "results"; File = results; Type = "text/csv"; Name = "results.csv" })
     let newUser = {
         Id = userId
         MxFile = user.MxFile
@@ -75,7 +82,7 @@ let result (ctx: HttpContext) =
     
     Database.add newUser   
     
-    let html = resultTables.html variables knownVariables
+    let html = resultTables.html variables knownVariables resultsList
     ctx.WriteHtmlView html
   
 let download (id: string) : EndpointHandler =

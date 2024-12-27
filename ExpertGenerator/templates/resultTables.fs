@@ -5,7 +5,7 @@ open Oxpecker.ViewEngine
 open Oxpecker.Htmx
 
 
-let html (variables: ResultItem array) (knownVariables: KnowledgeItem seq) =
+let html (variables: ResultItem array) (knownVariables: KnowledgeItem seq) (results: XmlModels.Result seq) =
 
     html (lang = "en") {
         head () {
@@ -94,6 +94,35 @@ let html (variables: ResultItem array) (knownVariables: KnowledgeItem seq) =
                                                 td () { string k.Number }
                                                 td () { k.Conditions }
                                                 td () { k.Path }
+                                            }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        div (class' = "table-wrapper", style = "margin-top: 20px;") {
+                            div (class' = "table-header") {
+                                h2 () { "Результаты" }
+
+                                button(class' = "download-button").on ("click", "downloadFile(\"results\")") {
+                                    "Загрузить"
+                                }
+                            }
+
+                            div (class' = "table-content") {
+                                table () {
+                                    thead () {
+                                        tr () {
+                                            th () { "Номер" }
+                                            th () { "Значение" }
+                                        }
+                                    }
+
+                                    tbody () {
+                                        for k in results do
+                                            tr () {
+                                                td () { string k.Id }
+                                                td () { k.Name }
                                             }
                                     }
                                 }
