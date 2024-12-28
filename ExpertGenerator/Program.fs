@@ -48,13 +48,21 @@ let result (ctx: HttpContext) =
     let knownVariables = TableGenerator.generateKnowledgeBase tree.Root
     let resultsList = TableGenerator.getResults tree
     
+    let variablesEachCondition = knownVariables
+                                 |> Seq.map(fun x-> x.Conditions |> Seq.map(_.VarName) |> String.concat ",")
+                                 |> Seq.mapi(fun i x -> i, x)
+                                 
+    let variablesEachConditionFile = variablesEachCondition
+                                    |> Seq.map(fun (i, x) -> $"{i};{x}")
+                                    |> String.concat Environment.NewLine
+                                    |> Encoding.UTF8.GetBytes
     let variablesFile = variables
                         |> Seq.map(fun x-> $"{x.Id};{x.Name};{x.Value}")
                         |> String.concat Environment.NewLine
                         |> Encoding.UTF8.GetBytes
     
     let knownVariablesFile = knownVariables
-                             |> Seq.map(fun x-> $"{x.Number};{x.Conditions};{x.Path}")
+                             |> Seq.map(fun x-> $"{x.Number};{x.ConditionToString()};{x.Path}")
                              |> String.concat Environment.NewLine
                              |> Encoding.UTF8.GetBytes
     
@@ -72,6 +80,7 @@ let result (ctx: HttpContext) =
                     .Add("knowledges", { Id = "knowledges"; File = knownVariablesFile; Type = "text/csv"; Name = "knowledges.csv" })
                     .Add("diagram", { Id = "diagram"; File = markedDiagram; Type = "text/xml"; Name = "diagram.drawio" })
                     .Add("results", { Id = "results"; File = results; Type = "text/csv"; Name = "results.csv" })
+                    .Add("variablesEachCondition", { Id = "variablesEachCondition"; File = variablesEachConditionFile; Type = "text/csv"; Name = "variablesEachCondition.csv" })
     let newUser = {
         Id = userId
         MxFile = user.MxFile
@@ -82,7 +91,7 @@ let result (ctx: HttpContext) =
     
     Database.add newUser   
     
-    let html = resultTables.html variables knownVariables resultsList
+    let html = resultTables.html variables knownVariables resultsList variablesEachCondition
     ctx.WriteHtmlView html
   
 let download (id: string) : EndpointHandler =

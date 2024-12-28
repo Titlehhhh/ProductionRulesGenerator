@@ -9,10 +9,12 @@ type ResultItem =
 
 let getResults (diagram: Tree) =
     let results = ResizeArray()
+
     for node in diagram do
         match node.Value with
         | :? Result as result -> results.Add(result)
         | _ -> ()
+
     results.ToArray()
 
 let getVariables (diagram: Tree) =
@@ -46,12 +48,28 @@ let getVariables (diagram: Tree) =
 
     results.ToArray()
 
+type Condition = { VarName: string; Value: string }
 
-let rec traverseTree
-    (currentPath: (string * string) list)
-    (currentIds: int list)
-    (node: Node)
-    : (int * string * string) list =
+type KnowledgeItem =
+    { Number: int
+      Conditions: Condition list
+      Result: string
+      Path: string }
+    
+    member this.ConditionToString() =
+        let conditions = 
+            this.Conditions
+            |> List.map (fun x -> $"{x.VarName} = \"{x.Value}\"")
+            |> String.concat " И "
+        
+        $"ЕСЛИ {conditions} ТО Rez = \"{this.Result}\""
+    member this.ToTuple() =              
+        (this.Number, this.ConditionToString(), this.Path)
+    override this.ToString() =               
+        $"{this.Number};{this.ConditionToString()};{this.Path}"
+
+let rec traverseTree (currentPath: (string * string) list) (currentIds: int list) (node: Node) : KnowledgeItem list =
+    
     match node with
     | :? Result as result ->
         let id = result.Id
@@ -59,12 +77,16 @@ let rec traverseTree
 
         let conditions =
             currentPath
-            |> List.map (fun (varName, value) -> $"{varName} = \"{value}\"")
-            |> String.concat " И "
+            |> List.rev
+            |> List.map (fun (varName, value) -> { VarName = varName; Value = value })
 
-        let fullCondition = $"ЕСЛИ {conditions} ТО Результат = {name}"
-        let path = (id :: currentIds) |> List.rev |> List.map string |> String.concat ","
-        [ (0, fullCondition, path) ]
+
+        let path = (id :: currentIds) |> List.map string |> String.concat ","
+       
+        [ { Number = 0
+            Conditions = conditions
+            Result = name
+            Path = path } ]
     | :? Question as question ->
         let id = question.Id
         let varName = question.VarName
@@ -74,16 +96,9 @@ let rec traverseTree
         |> Seq.map (fun x -> x.Key, x.Value)
         |> Seq.toList
         |> List.collect (fun (value, childNode) ->
-            traverseTree ((varName, value) :: currentPath) (id :: currentIds) childNode)
-
-type KnowledgeItem =
-    { Number: int
-      Conditions: string
-      Path: string }
+            traverseTree ((varName, value) :: currentPath) (id :: currentIds) childNode )
+    | _ -> failwith "Unknown node type"
 
 let generateKnowledgeBase (root: Node) =
     traverseTree [] [] root
-    |> List.mapi (fun index (num, conditions, path) ->
-        { Number = index + 1
-          Conditions = conditions
-          Path = path })
+    |> List.mapi (fun i x -> { x with Number = i + 1 })

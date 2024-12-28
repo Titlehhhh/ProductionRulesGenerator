@@ -5,7 +5,7 @@ open Oxpecker.ViewEngine
 open Oxpecker.Htmx
 
 
-let html (variables: ResultItem array) (knownVariables: KnowledgeItem seq) (results: XmlModels.Result seq) =
+let html (variables: ResultItem array) (knownVariables: KnowledgeItem seq) (results: XmlModels.Result seq) (varsConditions: (int * string) seq) =
 
     html (lang = "en") {
         head () {
@@ -92,7 +92,7 @@ let html (variables: ResultItem array) (knownVariables: KnowledgeItem seq) (resu
                                         for k in knownVariables do
                                             tr () {
                                                 td () { string k.Number }
-                                                td () { k.Conditions }
+                                                td () { k.ConditionToString() }
                                                 td () { k.Path }
                                             }
                                     }
@@ -123,6 +123,35 @@ let html (variables: ResultItem array) (knownVariables: KnowledgeItem seq) (resu
                                             tr () {
                                                 td () { string k.Id }
                                                 td () { k.Name }
+                                            }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        div (class' = "table-wrapper", style = "margin-top: 20px;") {
+                            div (class' = "table-header") {
+                                h2 () { "Переменные условий" }
+
+                                button(class' = "download-button").on ("click", "downloadFile(\"variablesEachCondition\")") {
+                                    "Загрузить"
+                                }
+                            }
+
+                            div (class' = "table-content") {
+                                table () {
+                                    thead () {
+                                        tr () {
+                                            th () { "Номер" }
+                                            th () { "Переменные" }
+                                        }
+                                    }
+
+                                    tbody () {
+                                        for k in varsConditions do
+                                            tr () {
+                                                td () { fst k |> string }
+                                                td () { snd k }
                                             }
                                     }
                                 }
