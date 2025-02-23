@@ -20,11 +20,11 @@ let html =
         }
         body () {
             div (class' = "container") {
-                h1 () { "Upload Your Draw.io Diagram" }
+                h1 () { "Загрузите свою диаграмму Draw.io" }
                 div (id = "upload-area", class' = "upload-area") {
-                    p () { "Drag & drop your file here, or click to select" }
+                    p () { "Перетащите файл сюда или нажмите, чтобы выбрать" }
                     form (action = "/upload", method = "post", enctype = "multipart/form-data") {
-                        label (for' = "file-upload", class' = "file-label") { "Choose File" }
+                        label (for' = "file-upload", class' = "file-label") { "Выберите файл" }
                         input (type' = "file", id = "file-upload", name = "file")
                     }                     
                 }

@@ -31,7 +31,7 @@ let html (diagrams: (string * string) list) =
                         for i, d in diagrams |> List.indexed do
                             option (value = string i) { $"{snd d}" }
                     }
-                    button (type' = "submit", style = "margin-left: 10px") { "Select" }
+                    button (type' = "submit", style = "margin-left: 10px") { "Выбрать" }
                 }
             }
 

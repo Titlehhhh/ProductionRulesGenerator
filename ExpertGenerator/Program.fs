@@ -117,6 +117,7 @@ let endpoints = [
 
 let configureApp (appBuilder: WebApplication) =
     appBuilder.Urls.Add("http://0.0.0.0:5000")
+    appBuilder.Urls.Add("http://localhost:5000")
 
     if appBuilder.Environment.IsDevelopment() then
         appBuilder.UseDeveloperExceptionPage() |> ignore

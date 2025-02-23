@@ -3,8 +3,7 @@
     grid-template-rows: 1fr 1fr;
     height: 100vh;
     gap: 10px;
-    padding: 10px;
-    background-color: #f4f4f9;
+    padding: 10px;    
 }
 
 .table-wrapper {
@@ -86,7 +85,7 @@ tbody tr:hover {
 }
 
 .demoTabs__content {
-    border-top: 2px solid red;
+    border-top: 2px solid #5576ff;
     padding: 16px;
 }
 
@@ -110,6 +109,9 @@ tbody tr:hover {
     background-color: #4e7bc1;
     color: #fff;
     cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s ease;
+    
 }
 
 .demoTabs__label:hover {

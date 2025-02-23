@@ -68,21 +68,16 @@ type KnowledgeItem =
     override this.ToString() =               
         $"{this.Number};{this.ConditionToString()};{this.Path}"
 
-let rec traverseTree (currentPath: (string * string) list) (currentIds: int list) (node: Node) : KnowledgeItem list =
-    
+let rec traverseTree (currentPath: (string * string) list) (currentIds: int list) (node: Node) : KnowledgeItem list =   
     match node with
     | :? Result as result ->
         let id = result.Id
         let name = result.Name
-
         let conditions =
             currentPath
             |> List.rev
             |> List.map (fun (varName, value) -> { VarName = varName; Value = value })
-
-
-        let path = (id :: currentIds) |> List.map string |> String.concat ","
-       
+        let path = (id :: currentIds) |> List.map string |> String.concat ","       
         [ { Number = 0
             Conditions = conditions
             Result = name
@@ -91,14 +86,12 @@ let rec traverseTree (currentPath: (string * string) list) (currentIds: int list
         let id = question.Id
         let varName = question.VarName
         let children = question.Children
-
         children
         |> Seq.map (fun x -> x.Key, x.Value)
         |> Seq.toList
         |> List.collect (fun (value, childNode) ->
             traverseTree ((varName, value) :: currentPath) (id :: currentIds) childNode )
     | _ -> failwith "Unknown node type"
-
 let generateKnowledgeBase (root: Node) =
     traverseTree [] [] root
     |> List.mapi (fun i x -> { x with Number = i + 1 })
